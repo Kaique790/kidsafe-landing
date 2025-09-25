@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KidSafe - Segurança Digital para Crianças</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo"><i class="fas fa-shield-alt"></i>KidSafe</a>
+          <ul class="nav-links">
+            <li>
+              <a href="#about"><i class="fas fa-info-circle"></i>Sobre</a>
+            </li>
+            <li>
+              <a href="#features"><i class="fas fa-star"></i>Diferenciais</a>
+            </li>
+            <li>
+              <a href="#how-it-works"
+                ><i class="fas fa-cogs"></i>Como Funciona</a
+              >
+            </li>
+            <li>
+              <a href="#pricing"><i class="fas fa-tags"></i>Planos</a>
+            </li>
+            <li>
+              <a href="#testimonials"
+                ><i class="fas fa-comments"></i>Depoimentos</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="btn btn-primary"
+                ><i class="fab fa-whatsapp"></i>Fale Conosco</a
+              >
+            </li>
+          </ul>
+          <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Deixe sua família segura com o KidSafe</h1>
+            <p>
+              O app que une segurança digital, aprendizado divertido e
+              relatórios inteligentes para apoiar pais e desenvolver crianças.
+            </p>
+            <a
+              href="https://wa.me/5579991389449"
+              class="btn btn-primary"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i> Fale conosco no WhatsApp</a
+            >
+
+            <div class="hero-features">
+              <div class="hero-feature">
+                <i class="fas fa-check-circle"></i> Controle parental avançado
+              </div>
+              <div class="hero-feature">
+                <i class="fas fa-check-circle"></i> Conteúdos educativos
+              </div>
+              <div class="hero-feature">
+                <i class="fas fa-check-circle"></i> Relatórios inteligentes
+              </div>
+              <div class="hero-feature">
+                <i class="fas fa-check-circle"></i> Gamificação para crianças
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="phone-mockup">
+              <div class="phone-screen">Tela do App KidSafe</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Sobre o KidSafe</h2>
+            <p>
+              O KidSafe vai além do simples bloqueio: combina gamificação,
+              relatórios inteligentes e conteúdos educativos para criar uma
+              experiência completa de segurança digital para crianças.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <i class="fas fa-shield-check"></i>
+                <div>
+                  <h4>Segurança Avançada</h4>
+                  <p>Proteção completa contra conteúdo inadequado</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-brain"></i>
+                <div>
+                  <h4>Desenvolvimento Cognitivo</h4>
+                  <p>Atividades que estimulam o raciocínio</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                  <h4>Relatórios Detalhados</h4>
+                  <p>Acompanhe o progresso do seu filho</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-gamepad"></i>
+                <div>
+                  <h4>Diversão Educativa</h4>
+                  <p>Gamificação que ensina e diverte</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight">
+              <p>
+                <i class="fas fa-quote-left"></i> Com o KidSafe, segurança
+                digital vira aprendizado real.
+                <i class="fas fa-quote-right"></i>
+              </p>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRjBGMEYwIi8+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzJBNEZCRCIvPjxwYXRoIGQ9Ik0xNjAgMTUwIEwyMDAgMTkwIEwyNDAgMTUwIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iOCIvPjx0ZXh0IHg9IjIwMCIgeT0iMjUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzNDNBNTQiPktpZFNhZmUgLSBTZWd1cmFuw6dhIERpZ2l0YWw8L3RleHQ+PC9zdmc+"
+              alt="KidSafe - Segurança Digital"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Diferenciais do KidSafe</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <h3>Gamificação inteligente</h3>
+            <p>
+              Crianças liberam tempo resolvendo quizzes educativos,
+              transformando o controle de tempo em uma experiência divertida.
+            </p>
+            <ul style="text-align: left; margin-top: 15px">
+              <li><i class="fas fa-check"></i> Quizzes educativos</li>
+              <li><i class="fas fa-check"></i> Sistema de recompensas</li>
+              <li><i class="fas fa-check"></i> Desafios progressivos</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Conteúdo educativo validado</h3>
+            <p>
+              Conteúdos criados por psicólogos e pedagogos, garantindo
+              aprendizado adequado para cada faixa etária.
+            </p>
+            <ul style="text-align: left; margin-top: 15px">
+              <li><i class="fas fa-check"></i> Validação de especialistas</li>
+              <li><i class="fas fa-check"></i> Conteúdo por faixa etária</li>
+              <li><i class="fas fa-check"></i> Atualizações regulares</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Relatórios com IA</h3>
+            <p>
+              Inteligência Artificial gera insights sobre atenção, lógica e
+              comportamento das crianças.
+            </p>
+            <ul style="text-align: left; margin-top: 15px">
+              <li><i class="fas fa-check"></i> Análise de comportamento</li>
+              <li><i class="fas fa-check"></i> Insights personalizados</li>
+              <li><i class="fas fa-check"></i> Recomendações específicas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <h2>Como Funciona</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <i class="fas fa-user-cog"></i>
+              <h3>Pais configuram o tempo de uso</h3>
+              <p>
+                Defina limites de tempo de tela de forma personalizada para cada
+                criança.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <i class="fas fa-puzzle-piece"></i>
+              <h3>Crianças desbloqueiam com quizzes</h3>
+              <p>
+                Para acessar o dispositivo, as crianças respondem perguntas
+                educativas divertidas.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <i class="fas fa-chart-bar"></i>
+              <h3>IA gera relatórios para os pais</h3>
+              <p>
+                Receba insights sobre o desenvolvimento e comportamento digital
+                do seu filho.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="step-cta">
+          <a href="https://wa.me/5579991389449" class="btn btn-primary"
+            ><i class="fab fa-whatsapp"></i> Saiba como aplicar na sua
+            família</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos Section -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <h2>Planos KidSafe</h2>
+        <div class="plans">
+          <div class="plan-card plan-basic">
+            <div class="trial-badge">Teste Grátis</div>
+            <div class="plan-header">
+              <h3>Básico</h3>
+              <div class="plan-price">R$ 9,90<span>/mês</span></div>
+              <p>Gamificação</p>
+            </div>
+            <div class="plan-features">
+              <ul>
+                <li><i class="fas fa-clock"></i> Controle de tempo de tela</li>
+                <li>
+                  <i class="fas fa-question-circle"></i> Quizzes educativos
+                  básicos
+                </li>
+                <li><i class="fas fa-users"></i> Até 3 perfis de crianças</li>
+                <li>
+                  <i class="fas fa-chart-pie"></i> Relatórios simples de uso
+                </li>
+                <li><i class="fas fa-shield-alt"></i> Proteção básica</li>
+              </ul>
+              <div class="plan-button">
+                <a href="#" class="btn btn-secondary"
+                  ><i class="fas fa-shopping-cart"></i> Assinar o plano</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="plan-card plan-intermediate">
+            <div class="trial-badge">Teste Grátis</div>
+            <div class="plan-header">
+              <h3>Intermediário</h3>
+              <div class="plan-price">R$ 19,90<span>/mês</span></div>
+              <p>Relatórios Inteligentes</p>
+            </div>
+            <div class="plan-features">
+              <ul>
+                <li>
+                  <i class="fas fa-check-double"></i> Todos os recursos do
+                  Básico
+                </li>
+                <li><i class="fas fa-robot"></i> Relatórios com IA</li>
+                <li>
+                  <i class="fas fa-book-open"></i> Conteúdos educativos
+                  avançados
+                </li>
+                <li><i class="fas fa-users"></i> Até 5 perfis de crianças</li>
+                <li><i class="fas fa-headset"></i> Suporte prioritário</li>
+                <li><i class="fas fa-lock"></i> Proteção avançada</li>
+              </ul>
+              <div class="plan-button">
+                <a href="#" class="btn btn-primary"
+                  ><i class="fas fa-shopping-cart"></i> Assinar o plano</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="plan-card plan-advanced">
+            <div class="trial-badge">Teste Grátis</div>
+            <div class="plan-header">
+              <h3>Avançado</h3>
+              <div class="plan-price">R$ 29,90<span>/mês</span></div>
+              <p>Relatórios + Conteúdos em Vídeo</p>
+            </div>
+            <div class="plan-features">
+              <ul>
+                <li>
+                  <i class="fas fa-check-double"></i> Todos os recursos do
+                  Intermediário
+                </li>
+                <li><i class="fas fa-video"></i> Aulas em vídeo exclusivas</li>
+                <li>
+                  <i class="fas fa-chart-line"></i> Relatórios detalhados
+                  semanais
+                </li>
+                <li><i class="fas fa-users"></i> Perfis ilimitados</li>
+                <li>
+                  <i class="fas fa-user-graduate"></i> Consultoria pedagógica
+                  mensal
+                </li>
+                <li><i class="fas fa-star"></i> Conteúdo premium</li>
+              </ul>
+              <div class="plan-button">
+                <a href="#" class="btn btn-primary"
+                  ><i class="fas fa-shopping-cart"></i> Assinar o plano</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Vibrante -->
+    <section class="vibrant-section">
+      <div class="container">
+        <h2>Aqui a tecnologia ajuda, educa e diverte!</h2>
+        <p>
+          O KidSafe transforma o tempo de tela em momentos de aprendizado e
+          desenvolvimento para suas crianças.
+        </p>
+        <div style="margin-top: 30px; font-size: 3rem">
+          <i class="fas fa-child" style="margin: 0 15px"></i>
+          <i class="fas fa-tablet-alt" style="margin: 0 15px"></i>
+          <i class="fas fa-graduation-cap" style="margin: 0 15px"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2>O que os pais dizem</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "O KidSafe mudou completamente nossa relação com a tecnologia em
+              casa. Meus filhos agora veem os quizzes como um desafio
+              divertido!"
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">MC</div>
+              <div class="author-info">
+                <h4>Mariana Costa</h4>
+                <p>Mãe do Lucas (8 anos) e da Sofia (6 anos)</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "Os relatórios com IA me surpreenderam! Consigo entender melhor
+              como meus filhos aprendem e onde posso ajudá-los mais."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">RS</div>
+              <div class="author-info">
+                <h4>Ricardo Silva</h4>
+                <p>Pai da Beatriz (10 anos)</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "Finalmente um app que une segurança com educação de verdade.
+              Minha filha adora os conteúdos e eu fico tranquila com a
+              proteção."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">AF</div>
+              <div class="author-info">
+                <h4>Ana Ferreira</h4>
+                <p>Mãe da Clara (7 anos)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contact" class="final-cta">
+      <div class="container">
+        <h2>Venha conhecer o KidSafe e proteja quem mais importa</h2>
+        <p>
+          Junte-se a milhares de famílias que já transformaram o tempo de tela
+          em momentos de aprendizado e diversão segura.
+        </p>
+        <a href="https://wa.me/5579991389449" class="btn btn-primary"
+          ><i class="fab fa-whatsapp"></i> Fale conosco no WhatsApp</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="footer-logo">
+              <i class="fas fa-shield-alt"></i>KidSafe
+            </div>
+            <p>
+              O aplicativo que une segurança digital, aprendizado divertido e
+              relatórios inteligentes para famílias modernas.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4><i class="fas fa-link"></i>Links Rápidos</h4>
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <a href="#about">Sobre</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i
+                ><a href="#features">Diferenciais</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i
+                ><a href="#how-it-works">Como Funciona</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i
+                ><a href="#pricing">Planos</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i
+                ><a href="#testimonials">Depoimentos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4><i class="fas fa-question-circle"></i>Ajuda</h4>
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i
+                ><a href="#">Central de Ajuda</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i
+                ><a href="#">Perguntas Frequentes</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i><a href="#">Contato</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i
+                ><a href="#">Política de Privacidade</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i
+                ><a href="#">Termos de Uso</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 KidSafe – Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Menu mobile
+      document
+        .querySelector(".mobile-menu")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
+
+      // Fechar menu ao clicar em um link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelector(".nav-links").classList.remove("active");
+        });
+      });
+
+      // Adicionar sombra ao header ao rolar
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
+        } else {
+          header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+        }
+      });
+    </script>
+  </body>
+</html>
