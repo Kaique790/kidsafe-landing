@@ -299,10 +299,18 @@ header {
   font-size: 1.2rem;
 }
 
-.about-image {
+.about-video {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-left: 4rem;
+
+  video {
+    max-width: 100%;
+  }
+
+  max-width: 280px;
+  max-height: 500px;
 }
 
 .about-image img {
